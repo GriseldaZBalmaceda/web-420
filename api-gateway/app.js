@@ -5,10 +5,10 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var mongoose = require('mongoose');
 var indexRouter = require('./routes/index');
-
+var apiCatalog=require('./routes/api-catalog')
 mongoose.Promise = require('bluebird');
 
-mongoose.connect('mongodb+srv://admin:<password>@cluster0-3kerp.mongodb.net/test?retryWrites=true', {
+mongoose.connect('mongodb+srv://admin:admin@cluster0-3kerp.mongodb.net/test?retryWrites=true', {
     promiseLibrary: require('bluebird')
 }).then ( () => console.log('connection successful'))
   .catch( (err) => console.error(err));
@@ -25,7 +25,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-
+app.use('/api', apiCatalog);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
