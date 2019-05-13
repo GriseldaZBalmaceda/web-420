@@ -1,4 +1,10 @@
-
+/*
+============================================
+; Title:  userSchema
+; Author: Griselda Balmaceda
+; Description: creating userSchema
+;===========================================
+*/
 //creating userSchema
 var mongoose = require('mongoose');
 

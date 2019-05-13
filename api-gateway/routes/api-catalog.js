@@ -1,4 +1,9 @@
-
+/*
+============================================
+; Title:  API catalog
+; Author: Griselda Balmaceda
+;===========================================
+*/
 //requireing necessary modules
 var express = require('express');
 var router = express.Router();

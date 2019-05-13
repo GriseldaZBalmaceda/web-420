@@ -1,3 +1,11 @@
+/*
+============================================
+; Title:  Assignment 2.3 - API Gateway Part II
+; Author: Griselda Balmaceda
+; Description: creating authController
+;===========================================
+*/
+
 var User = require('../models/user');
 
 
