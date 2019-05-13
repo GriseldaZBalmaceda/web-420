@@ -1,5 +1,5 @@
 
-
+//creating userSchema
 var mongoose = require('mongoose');
 
 
