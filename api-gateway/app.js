@@ -1,4 +1,11 @@
 
+/*
+============================================
+; Title:  Assignment 2.3 - API Gateway Part II
+; Author: Griselda Balmaceda
+; Description: Showcases RESTful API
+;===========================================
+*/
 //requiring modules
 var createError = require('http-errors');
 var express = require('express');
