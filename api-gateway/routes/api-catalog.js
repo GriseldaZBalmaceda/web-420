@@ -2,6 +2,7 @@
 ============================================
 ; Title:  API catalog
 ; Author: Griselda Balmaceda
+; Description: Routing post and get requests
 ;===========================================
 */
 //requireing necessary modules
