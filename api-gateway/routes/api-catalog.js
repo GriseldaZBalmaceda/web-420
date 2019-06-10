@@ -17,5 +17,12 @@ router.post('/auth/register', auth_controller.user_register);
 //getting user token
 router.get('/auth/token', auth_controller.user_token);
 
+// allowing user login requests
+router.post('/auth/login',auth_controller.user_login);
+
+//allowing logout requests
+
+router.get('/auth/logout',auth_controller.user_logout)
+
 
 module.exports = router;

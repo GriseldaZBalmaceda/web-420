@@ -16,7 +16,7 @@ var userSchema = new mongoose.Schema({
 });
 
 //exporting userSchema
-module.exports = mongoose.model('User', userSchema);
+const User = module.exports = mongoose.model('User', userSchema);
 
 //adds a new user to the database 
 module.exports.add=(user,callback)=>{
@@ -25,4 +25,11 @@ module.exports.add=(user,callback)=>{
 module.exports.getById=(id,callback)=>{
     var query ={_id:id};
     User.findById(query,callback);
+}
+
+//adding a new query to find individual users by email address 
+
+module.exports.getOne = (e,callback)=>{
+    var query = {email:e};
+    User.findOne(query,callback)
 }
