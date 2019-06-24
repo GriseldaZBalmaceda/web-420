@@ -1,3 +1,11 @@
+/*
+============================================
+; Title: Check Token
+; Author: Griselda Balmaceda
+; Description: Verifying user token
+;===========================================
+*/
+
 var jwt = require('jsonwebtoken');
 var config = require('../config')
 
